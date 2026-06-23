@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: devops-portfolio
+  tag: "0.1.0"
+  pullPolicy: IfNotPresent
+
+config:
+  environment: "development"
+  debug: "true"
+
+probes:
+  enabled: false
+
+ingress:
+  enabled: false
